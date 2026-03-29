@@ -1,0 +1,67 @@
+:root {
+    --theme: #280;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial;
+}
+
+h1 {
+    color: var(--theme);
+}
+
+#map {
+    width: 100%;
+}
+
+#mapContainer {
+    position: relative;
+    display: none;
+}
+
+#marker {
+    width: 3vw;/*3% of the viewport width */
+    height: 3vw;
+    background-color: black;
+    border-radius: 50%;
+    outline: 5px solid var(--theme);
+    border: 5px solid white;/*affects the size*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* Camera */
+#camera {
+    width: 100%;
+}
+
+/* Button styling */
+#btn {
+    background-color: var(--theme);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+#btn:hover {
+    background-color: #4caf50;
+    transform: scale(1.05);
+}
+
+/* Inventory text */
+p {
+    font-size: 18px;
+    margin: 5px;
+}
