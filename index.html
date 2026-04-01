@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Inventory System</title>
+    <link rel="stylesheet" href="2505863.css" />
+</head>
+<body>
+
+    <h1>QR Inventory System</h1>
+
+    <div id="mapContainer">
+        <img src="map.png" id="map" alt="map" />
+        <div id="marker"></div>
+    </div>
+
+    <button id="btn" onclick="toggleScanner()">SCAN</button>
+
+    <div id="camera"></div>
+
+    <!-- Inventory info -->
+    <p id="name"></p>
+    <p id="stock"></p>
+    <p id="price"></p>
+
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script src="2505863.js"></script>
+
+</body>
+</html>
